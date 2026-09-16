@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy Birthday Nikhitha! 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Kalam:wght@400;700&family=Patrick+Hand&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- FLOATING DOODLES & HEARTS CONTAINER -->
+  <div id="ambient-decorations" aria-hidden="true"></div>
+
+  <!-- SCREEN 0: PLAYFUL SCRAPBOOK LOADER -->
+  <section id="screen-loader" class="loader-screen">
+    <div class="loader-content paper-card">
+      <div class="tape-strip top-tape"></div>
+      <div class="loader-stamp">💌</div>
+      <div class="loader-text-wrapper">
+        <h2 id="loader-status" class="handwritten">loading...</h2>
+        <p class="loader-sub">gathering evidence from 23rd July</p>
+      </div>
+      <div class="progress-bar-container">
+        <div id="loader-progress" class="progress-bar-fill"></div>
+      </div>
+      <div id="detection-badge" class="detection-badge hidden">
+        <span>Chellama detected 🎀</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN SCRAPBOOK CONTAINER -->
+  <main id="main-content" class="scrapbook-wrapper hidden">
+
+    <!-- FLOATING AUDIO / SPRINKLE TOGGLE -->
+    <button id="floating-hearts-btn" class="floating-btn" title="Shower cute hearts!">🎀 sprinkle love</button>
+
+    <!-- SCREEN 1: THE OPENING -->
+    <section id="screen-1" class="scrapbook-section screen-opening">
+      <div class="scrapbook-sheet hero-sheet">
+        <div class="tape-strip corner-tl"></div>
+        <div class="tape-strip corner-tr"></div>
+        <span class="doodle doodle-star s1">✦</span>
+        <span class="doodle doodle-star s2">✦</span>
+        
+        <div class="badge-tag">FOR: NIKHITHA 🎀</div>
+        <h1 class="main-title handwritten">HAPPIEST BIRTHDAYYYY NIKHITHA 🎀😭</h1>
+        
+        <div class="hero-dialogue text-fade-in">
+          <p class="dialogue-line">okay first of all...</p>
+          <p class="dialogue-line">don't get too excited.</p>
+          <div class="card-accent paper-note note-tilt-left">
+            <p class="big-statement">I made you a whole website.</p>
+          </div>
+          <p class="dialogue-pause">yes.</p>
+          <p class="dialogue-emphasis">A WHOLE WEBSITE.</p>
+          <p class="dialogue-line casual">because apparently a normal birthday text wasn't enough 😭</p>
+        </div>
+
+        <div class="cta-wrapper">
+          <a href="#screen-2" class="scrapbook-btn primary-btn">
+            come, I have things to tell you →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: 23RD JULY TIMELINE -->
+    <section id="screen-2" class="scrapbook-section screen-origin">
+      <div class="scrapbook-sheet">
+        <div class="washi-tape center-tape"></div>
+        <div class="section-tag handwritten">Chapter 01</div>
+        <h2 class="section-title handwritten">Okay so... 23rd July.</h2>
+        
+        <div class="story-block">
+          <p class="story-line">This is basically where this whole thing started.</p>
+          <p class="story-line">At that point I didn't even know you properly.</p>
+          <p class="story-line quote-box">"Like... hi junior 👋"</p>
+          <p class="story-line highlight-text">And now look at us.</p>
+        </div>
+
+        <!-- TIMELINE PROGRESSION -->
+        <div class="funny-timeline">
+          <div class="timeline-step">
+            <span class="step-badge">23 JULY</span>
+            <span class="step-desc">"Hi junior 👋"</span>
+          </div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">
+            <span class="step-badge">somehow</span>
+            <span class="step-desc">started talking</span>
+          </div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step">
+            <span class="step-badge">somehow somehow</span>
+            <span class="step-desc">jokes, leg-pulling & Telugu-English</span>
+          </div>
+          <div class="timeline-arrow">↓</div>
+          <div class="timeline-step crash">
+            <span class="step-badge alert-badge">BRO WHAT HAPPENED</span>
+            <span class="step-desc">full time besties / akka bully 😭</span>
+          </div>
+        </div>
+
+        <!-- CHAT SCREENSHOTS PLACEHOLDERS -->
+        <div class="scrapbook-gallery-header">
+          <h3 class="handwritten sub-heading">The Exhibit of Early Days 📱</h3>
+          <p class="gallery-subtext">(our chat history beginning around 23rd July)</p>
+        </div>
+
+        <div class="chat-screenshots-grid">
+          <!-- Chat 1 -->
+          <div class="scrapbook-polaroid chat-frame tilt-left">
+            <div class="tape-strip top-tape"></div>
+            <div class="polaroid-photo-wrapper">
+              <img src="assets/images/chat1.jpeg" alt="Chat Screenshot 1" class="polaroid-img" onerror="this.src='assets/images/chat1.svg'">
+            </div>
+            <div class="polaroid-caption handwritten">
+              <span>"hehe this was the beginning"</span>
+              <span class="scribble-doodle">♡</span>
+            </div>
+          </div>
+
+          <!-- Chat 2 -->
+          <div class="scrapbook-polaroid chat-frame tilt-right">
+            <div class="washi-tape washi-lavender"></div>
+            <div class="polaroid-photo-wrapper">
+              <img src="assets/images/chat2.jpeg" alt="Chat Screenshot 2" class="polaroid-img" onerror="this.src='assets/images/chat2.svg'">
+            </div>
+            <div class="polaroid-caption handwritten">
+              <span>"look at us 😭"</span>
+              <span class="scribble-arrow">↗</span>
+            </div>
+          </div>
+
+          <!-- Chat 3 -->
+          <div class="scrapbook-polaroid chat-frame tilt-slight">
+            <div class="tape-strip top-tape"></div>
+            <div class="polaroid-photo-wrapper">
+              <img src="assets/images/chat3.jpeg" alt="Chat Screenshot 3" class="polaroid-img" onerror="this.src='assets/images/chat3.svg'">
+            </div>
+            <div class="polaroid-caption handwritten">
+              <span>"we really didn't know where this was going"</span>
+              <span class="scribble-doodle">✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: AND THEN IDK WHAT HAPPENED -->
+    <section id="screen-3" class="scrapbook-section screen-transition">
+      <div class="scrapbook-sheet">
+        <div class="tape-strip corner-tr"></div>
+        <div class="section-tag handwritten">Chapter 02</div>
+        <h2 class="section-title handwritten">And then idk what happened.</h2>
+
+        <div class="line-by-line-reveal">
+          <p class="reveal-item">We started talking.</p>
+          <p class="reveal-item">Then we started talking more.</p>
+          <p class="reveal-item">Then somehow you became one of those people I just talk to.</p>
+          <p class="reveal-item text-soft">And then...</p>
+          <p class="reveal-item text-bold">oh.</p>
+          <p class="reveal-item text-sweet">We're actually close now.</p>
+          <h3 class="reveal-item punchline-loud handwritten">WHEN DID THAT HAPPEN 😭</h3>
+        </div>
+
+        <!-- MEME 1: STEP BROTHERS BEST FRIENDS -->
+        <div class="meme-container paper-card tilt-slight">
+          <div class="tape-strip top-tape"></div>
+          <img src="assets/memes/step_brothers.gif" alt="Did we just become best friends? Yup!" class="meme-gif" loading="lazy">
+          <div class="meme-caption handwritten">
+            <span>Us somewhere between July and now 💀</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: YOU & PULLING MY LEG -->
+    <section id="screen-4" class="scrapbook-section screen-teasing">
+      <div class="scrapbook-sheet">
+        <div class="washi-tape washi-peach"></div>
+        <div class="section-tag handwritten">Chapter 03</div>
+        <h2 class="section-title handwritten">Also bro.</h2>
+
+        <div class="story-block">
+          <p class="story-line">You're actually one of the cutest juniors.</p>
+          <p class="story-line">And funniest.</p>
+          <p class="story-line text-whisper">Unfortunately.</p>
+          <p class="story-line">Because you LOVE</p>
+          
+          <div class="wobble-text-container">
+            <span id="wobble-target" class="wobble-badge handwritten" title="Poke me!">PULLING MY LEG</span>
+          </div>
+          <p class="tap-hint handwritten">(tap or hover on that ↑)</p>
+
+          <p class="story-line question-line">Like why are you so happy annoying me 😭</p>
+        </div>
+
+        <!-- MEME 2: ANNOYING CAT POKING FRIEND -->
+        <div class="meme-container paper-card tilt-right">
+          <div class="tape-strip corner-tl"></div>
+          <img src="assets/memes/annoying_cat.gif" alt="Cat poking friend" class="meme-gif" loading="lazy">
+          <div class="meme-caption handwritten">
+            <span>You 24/7 trying to find new ways to annoy me</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: THE AKKA INCIDENT -->
+    <section id="screen-5" class="scrapbook-section screen-akka">
+      <div class="scrapbook-sheet akka-sheet" id="akka-playground">
+        <div class="tape-strip top-tape"></div>
+        <div class="section-tag handwritten alert-tag">The Crime Scene 🚨</div>
+        <h2 class="section-title handwritten">The Akka Incident</h2>
+
+        <div class="story-block">
+          <p class="story-line">And then there's one thing.</p>
+          <p class="story-line pause-line">You call me...</p>
+          
+          <div class="huge-akka-reveal">
+            <h1 id="the-akka-word" class="handwritten">AKKA.</h1>
+          </div>
+
+          <div class="akka-rant">
+            <p class="rant-line">BRO.</p>
+            <p class="rant-line">WHY.</p>
+            <p class="rant-line">Out of every possible thing...</p>
+            <p class="rant-line emphasize">AKKA????</p>
+            <p class="rant-line telugu-hint">And you're literally the ONLY junior who calls me that 😭</p>
+          </div>
+        </div>
+
+        <!-- THE CHAOS BUTTON -->
+        <div class="akka-interactive-zone">
+          <button id="akka-chaos-btn" class="scrapbook-btn akka-btn">
+            say it again 🔊
+          </button>
+          <span id="akka-counter" class="counter-text handwritten">clicks: 0</span>
+        </div>
+
+        <!-- REACTION MEME -->
+        <div class="meme-container paper-card tilt-left">
+          <div class="washi-tape washi-lavender"></div>
+          <img src="assets/memes/michael_shock.gif" alt="Michael Scott Dramatic Shock" class="meme-gif" loading="lazy">
+          <div class="meme-caption handwritten">
+            <span>Me every single time you hit me with "akka"</span>
+          </div>
+        </div>
+
+        <div class="secret-confession paper-note note-tilt-right">
+          <div class="tape-strip corner-tr"></div>
+          <p class="handwritten secret-text">Okay fine.</p>
+          <p class="handwritten secret-text">I secretly don't hate it.</p>
+          <p class="handwritten secret-loud">BUT DON'T GET TOO HAPPY.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 6: THE CUTE PART -->
+    <section id="screen-6" class="scrapbook-section screen-cute">
+      <div class="scrapbook-sheet cute-sheet">
+        <div class="washi-tape washi-blush"></div>
+        <div class="section-tag handwritten">Chapter 04</div>
+        <h2 class="section-title handwritten">Okay okay...</h2>
+
+        <div class="cute-content">
+          <p class="soft-line">Jokes apart.</p>
+          <p class="heartfelt-line">You have a really cute smile.</p>
+          <p class="soft-line confirm">Like actually.</p>
+
+          <div class="sticky-warning paper-note tilt-slight">
+            <span class="pin">📌</span>
+            <p class="handwritten warning-note">
+              don't let this compliment inflate your ego pls.
+            </p>
+          </div>
+
+          <div class="floating-hearts-doodle" aria-hidden="true">
+            <span>🌸</span><span>🤍</span><span>🎀</span><span>✨</span><span>🧸</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 7: RANDOM GIFTS -->
+    <section id="screen-7" class="scrapbook-section screen-gifts">
+      <div class="scrapbook-sheet">
+        <div class="tape-strip top-tape"></div>
+        <div class="section-tag handwritten">Chapter 05</div>
+        <h2 class="section-title handwritten">AND YOUR RANDOM GIFTS 😭</h2>
+
+        <div class="story-block">
+          <p class="story-line">Bro why do you randomly give me gifts?</p>
+          <p class="story-line">I'll literally be minding my own business...</p>
+          <p class="story-line">and then suddenly...</p>
+        </div>
+
+        <!-- INTERACTIVE GIFT BOX -->
+        <div class="gift-box-stage">
+          <div id="interactive-gift" class="gift-box" role="button" tabindex="0" aria-label="Open random gift">
+            <div class="gift-lid">
+              <div class="gift-ribbon-bow">🎀</div>
+              <div class="gift-ribbon-vertical"></div>
+            </div>
+            <div class="gift-body">
+              <div class="gift-ribbon-vertical"></div>
+              <div class="gift-ribbon-horizontal"></div>
+              <span class="gift-glow">✨</span>
+            </div>
+            <span class="gift-click-prompt handwritten">tap to open 🎁</span>
+          </div>
+
+          <div id="gift-reveal-card" class="gift-reveal-card hidden paper-card">
+            <div class="washi-tape washi-lavender"></div>
+            <div class="scrapbook-polaroid photo-frame tilt-slight" style="max-width: 320px; margin: 14px auto 18px;">
+              <div class="polaroid-photo-wrapper">
+                <img src="assets/images/2.jpeg" alt="Her giving me a gift" class="polaroid-img" onerror="this.src='2.jpeg'">
+              </div>
+              <div class="polaroid-caption handwritten">
+                <span>"Literally you giving me a gift 🎁😭"</span>
+              </div>
+            </div>
+            <h3 class="handwritten reveal-title">gift received 🎁✨</h3>
+            <p class="handwritten reveal-desc">"Here." — Nikhitha for literally no reason at all</p>
+          </div>
+        </div>
+
+        <div class="gift-punchline">
+          <p class="story-line question-line">???</p>
+          <p class="story-line">Okay fine.</p>
+          <p class="story-line text-sweet">I really like that you do that.</p>
+          <p class="story-line punchline-loud handwritten">BUT STILL WHY 😭</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 8: THE BIGGEST DISCOVERY -->
+    <section id="screen-8" class="scrapbook-section screen-discovery">
+      <div class="scrapbook-sheet discovery-sheet">
+        <div class="washi-tape washi-rose"></div>
+        <div class="section-tag handwritten">Shocking Revelation ⚠️</div>
+        <h2 class="section-title handwritten">Okay.</h2>
+
+        <div class="story-block">
+          <p class="story-line">While making this website...</p>
+          <p class="story-line pause-line">I discovered something.</p>
+        </div>
+
+        <div class="huge-discovery-box">
+          <h1 id="no-photo-text" class="glitch-text handwritten">WE HAVE NO PHOTO TOGETHER.</h1>
+          <h2 class="fah-text handwritten">FAHHHHHHHHHHHH 😭</h2>
+        </div>
+
+        <!-- RETRO DIAGNOSTIC CARD -->
+        <div class="system-diagnostic-box">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">friendship_diagnostics.log</span>
+          </div>
+          <pre class="terminal-body"><code>FRIENDSHIP: close af
+MEMORIES: many
+CHAT SCREENSHOTS: yes
+PHOTOS TOGETHER: 0
+LOGIC: unavailable</code></pre>
+        </div>
+
+        <div class="discovery-monologue">
+          <p class="story-line">Like bro.</p>
+          <p class="story-line">How.</p>
+          <p class="story-line text-bold">HOW DID WE MANAGE THIS.</p>
+          <p class="story-line telugu-hint handwritten">Idk ra 😭</p>
+        </div>
+
+        <!-- MEME 3: TRAVOLTA LOOKING AROUND -->
+        <div class="meme-container paper-card tilt-right">
+          <div class="tape-strip top-tape"></div>
+          <img src="assets/memes/confused_travolta.gif" alt="Confused Travolta searching for photos" class="meme-gif" loading="lazy">
+          <div class="meme-caption handwritten">
+            <span>Me searching my camera roll for a single picture of us</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 9: PHOTO 1 -->
+    <section id="screen-9" class="scrapbook-section screen-photo-1">
+      <div class="scrapbook-sheet">
+        <div class="washi-tape washi-lavender"></div>
+        <div class="section-tag handwritten">Photo Gallery 📸</div>
+        
+        <div class="polaroid-showcase">
+          <div class="scrapbook-polaroid photo-frame tilt-left">
+            <div class="tape-strip corner-tl"></div>
+            <div class="tape-strip corner-tr"></div>
+            <div class="polaroid-photo-wrapper main-photo-wrapper">
+              <img src="assets/images/1.jpeg" alt="Nikhitha (Chellama)" class="polaroid-img" onerror="this.src='1.jpeg'">
+            </div>
+            <div class="polaroid-caption handwritten photo-caption">
+              <p class="caption-lead">"okay this should've existed ages ago."</p>
+              <span class="scribble-tag">look at her 😭✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 10: PHOTO 2 -->
+    <section id="screen-10" class="scrapbook-section screen-photo-2">
+      <div class="scrapbook-sheet">
+        <div class="washi-tape washi-peach"></div>
+        
+        <div class="polaroid-showcase">
+          <div class="scrapbook-polaroid photo-frame tilt-right">
+            <div class="tape-strip top-tape"></div>
+            <div class="polaroid-photo-wrapper main-photo-wrapper">
+              <img src="assets/images/2.jpeg" alt="Her giving me a gift" class="polaroid-img" onerror="this.src='2.jpeg'">
+            </div>
+            <div class="polaroid-caption handwritten photo-caption">
+              <p class="caption-lead">"compensating for the 827 photos we apparently forgot to take."</p>
+              <span class="scribble-tag">evidence of her giving me gifts 🎁</span>
+              <div class="doodle-row">
+                <span>🎀</span><span>✨</span><span>📸</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 11: THINGS I NEVER SAID PROPERLY -->
+    <section id="screen-11" class="scrapbook-section screen-whispers">
+      <div class="scrapbook-sheet whispers-sheet">
+        <div class="tape-strip top-tape"></div>
+        <div class="section-tag handwritten">Quiet Thoughts 💌</div>
+        <h2 class="section-title handwritten">Things I never said properly.</h2>
+
+        <div class="whisper-cards-list">
+          <div class="whisper-card paper-note tilt-left">
+            <span class="whisper-bullet">♡</span>
+            <p class="whisper-text handwritten">I like your stupid sense of humour.</p>
+          </div>
+          <div class="whisper-card paper-note tilt-right">
+            <span class="whisper-bullet">♡</span>
+            <p class="whisper-text handwritten">I like how you pull my leg.</p>
+          </div>
+          <div class="whisper-card paper-note tilt-slight">
+            <span class="whisper-bullet">♡</span>
+            <p class="whisper-text handwritten">I like your random gifts.</p>
+          </div>
+          <div class="whisper-card paper-note tilt-left">
+            <span class="whisper-bullet">♡</span>
+            <p class="whisper-text handwritten">I like your cute smile.</p>
+          </div>
+          <div class="whisper-card paper-note tilt-right">
+            <span class="whisper-bullet">♡</span>
+            <p class="whisper-text handwritten">I like how you somehow became so close to me.</p>
+          </div>
+        </div>
+
+        <div class="whisper-conclusion">
+          <p class="conclusion-line">And honestly...</p>
+          <p class="conclusion-line bold-sweet handwritten">I'm really glad you did.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 12: MEME CHAT -->
+    <section id="screen-12" class="scrapbook-section screen-chat-sim">
+      <div class="scrapbook-sheet">
+        <div class="washi-tape washi-lavender"></div>
+        <div class="section-tag handwritten">Live Re-enactment 💬</div>
+        <h2 class="section-title handwritten">Accurate Depiction of Us</h2>
+
+        <!-- INTERACTIVE SCRAPBOOK CHAT SIMULATOR -->
+        <div class="chat-simulator-frame paper-card">
+          <div class="chat-header">
+            <span class="avatar">🎀</span>
+            <div class="chat-header-info">
+              <span class="contact-name">Chellama (Nikhitha)</span>
+              <span class="contact-status">online • plotting to say akka</span>
+            </div>
+          </div>
+
+          <div class="chat-messages-body" id="chat-messages-body">
+            <!-- Bubble 1 -->
+            <div class="chat-row me">
+              <div class="chat-bubble me-bubble">
+                <span class="sender-label">Me:</span>
+                <p>Why are you like this?</p>
+              </div>
+            </div>
+
+            <!-- Bubble 2 -->
+            <div class="chat-row junior">
+              <div class="chat-bubble junior-bubble">
+                <span class="sender-label">Nikhitha:</span>
+                <p>😇</p>
+              </div>
+            </div>
+
+            <!-- Bubble 3 -->
+            <div class="chat-row me">
+              <div class="chat-bubble me-bubble">
+                <span class="sender-label">Me:</span>
+                <p>You literally just called me akka.</p>
+              </div>
+            </div>
+
+            <!-- Bubble 4 -->
+            <div class="chat-row junior">
+              <div class="chat-bubble junior-bubble">
+                <span class="sender-label">Nikhitha:</span>
+                <p>akka 🥰</p>
+              </div>
+            </div>
+
+            <!-- Bubble 5 -->
+            <div class="chat-row me">
+              <div class="chat-bubble me-bubble">
+                <span class="sender-label">Me:</span>
+                <p>I'm done.</p>
+              </div>
+            </div>
+
+            <!-- Bubble 6 -->
+            <div class="chat-row junior">
+              <div class="chat-bubble junior-bubble">
+                <span class="sender-label">Nikhitha:</span>
+                <p>okay akka</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRAMATIC MEME REACTION -->
+          <div class="chat-meme-reaction">
+            <img src="assets/memes/crashing_out.gif" alt="Crashing out dramatic exit" class="meme-gif" loading="lazy">
+            <p class="handwritten meme-caption-small">Me signing off in absolute defeat 💀</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 13: RANDOM LITTLE NOTES -->
+    <section id="screen-13" class="scrapbook-section screen-sticky-notes">
+      <div class="scrapbook-sheet board-sheet">
+        <div class="washi-tape washi-peach"></div>
+        <div class="section-tag handwritten">Field Notes 📌</div>
+        <h2 class="section-title handwritten">Official Dossier on Nikhitha</h2>
+        <p class="board-subtitle handwritten">(tap each note to reveal the secret intel)</p>
+
+        <div class="sticky-corkboard">
+          <!-- Note 1 -->
+          <div class="scrapbook-sticky yellow-note tilt-left" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"chellama behavior"</h4>
+            <div class="sticky-secret handwritten">
+              giving random chocolates & treats out of nowhere, smiling innocently, and vanishing!
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+
+          <!-- Note 2 -->
+          <div class="scrapbook-sticky pink-note tilt-right" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"certified leg-puller"</h4>
+            <div class="sticky-secret handwritten">
+              full-time unpaid internship of finding whatever I said and making fun of me for it 😭
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+
+          <!-- Note 3 -->
+          <div class="scrapbook-sticky lavender-note tilt-slight" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"gift distributor"</h4>
+            <div class="sticky-secret handwritten">
+              acts like Santa Claus on random working days. Still refuse to understand why but thank you ❤️
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+
+          <!-- Note 4 -->
+          <div class="scrapbook-sticky peach-note tilt-left" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"akka caller"</h4>
+            <div class="sticky-secret handwritten">
+              the only junior who dared to adopt this title and refuses to back down. Respect the stubbornness.
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+
+          <!-- Note 5 -->
+          <div class="scrapbook-sticky rose-note tilt-right" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"cute smile detected"</h4>
+            <div class="sticky-secret handwritten">
+              warning: this compliment has an expiration date so don't let it get to your head 😂
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+
+          <!-- Note 6 -->
+          <div class="scrapbook-sticky blue-note tilt-slight" tabindex="0" role="button" aria-label="Reveal note">
+            <div class="pin">📍</div>
+            <h4 class="sticky-title handwritten">"chaos department"</h4>
+            <div class="sticky-secret handwritten">
+              founded 23rd July. Headquarters: our daily texts. Operations: purely unhinged.
+            </div>
+            <span class="flip-hint">tap to reveal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL SCREEN: HEARTWARMING LETTER -->
+    <section id="screen-final" class="scrapbook-section screen-letter">
+      <div class="scrapbook-sheet final-sheet">
+        <div class="washi-tape center-tape"></div>
+        <div class="letter-stamp">💌</div>
+
+        <div class="letter-content">
+          <p class="letter-line">Okay bro.</p>
+          <p class="letter-line">Jokes apart for one minute.</p>
+          
+          <div class="heartfelt-block">
+            <p class="heartfelt-text">I genuinely don't know when we got this close.</p>
+            <p class="heartfelt-text">
+              I just know that somewhere between 23rd July, random conversations, you pulling my leg, random gifts and you calling me akka...
+            </p>
+            <p class="heartfelt-highlight handwritten">
+              you became someone I'm really glad I met.
+            </p>
+          </div>
+
+          <div class="big-wishes-box">
+            <h1 class="grand-birthday-title handwritten">Happy Birthday, Chellama 🫶</h1>
+            
+            <ul class="birthday-manifesto handwritten">
+              <li><span>🌸</span> Stay cute.</li>
+              <li><span>✨</span> Stay funny.</li>
+              <li><span>😈</span> Keep annoying me.</li>
+              <li><span>🎁</span> Keep giving random gifts.</li>
+              <li><span>📸</span> And please...</li>
+            </ul>
+
+            <div class="urgent-plea-card paper-note">
+              <h2 class="urgent-plea handwritten">TAKE A PHOTO WITH ME 😭</h2>
+              <p class="plea-reason">
+                Because apparently our friendship has existed for ages and our camera roll has no evidence.
+              </p>
+            </div>
+          </div>
+
+          <div class="letter-signoff">
+            <p class="signoff-sub handwritten">Happy birthday, Nikhitha 🎀</p>
+            <p class="signoff-signature handwritten">— your favourite akka (don't deny it)</p>
+          </div>
+
+          <!-- FINAL INTERACTION BUTTON -->
+          <div class="final-cta-area">
+            <button id="final-bye-btn" class="scrapbook-btn finale-btn">
+              okay bye now →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FINAL CELEBRATION MODAL OVERLAY -->
+  <div id="final-modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card paper-card">
+      <div class="washi-tape washi-lavender"></div>
+      <div id="modal-step-1" class="modal-step">
+        <h2 class="handwritten modal-heading">WAIT.</h2>
+        <p class="modal-subtext handwritten">One more thing...</p>
+      </div>
+      <div id="modal-step-2" class="modal-step hidden">
+        <h1 class="handwritten akka-love-text">AKKA LOVES YOUUU 😭🫶</h1>
+      </div>
+      <div id="modal-step-3" class="modal-step hidden">
+        <p class="handwritten cringe-text">ew no delete that.</p>
+      </div>
+      <div id="modal-step-4" class="modal-step hidden">
+        <h2 class="handwritten final-hbd-text">Happy Birthday Chellama 🎀</h2>
+        <p class="modal-sweet-note">now go celebrate and eat cake! 🎂</p>
+        <button id="modal-close-btn" class="scrapbook-btn mini-btn">aww thanks akka ✨</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
